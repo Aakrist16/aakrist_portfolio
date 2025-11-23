@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: relative;
+    padding: 40px 0 80px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* NAVBAR (F1 STYLE) */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: 1px solid #ff0000;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #ff0000;
+    color: black;
+}
+
+/* VIDEO FRONT */
+#background_video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.35;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #111;
+    border-radius: 12px;
+    border: 1px solid #222;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ff0000;
+    text-transform: uppercase;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff0000;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== TABLE ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #ff0000;
+    color: black;
+    padding: 12px;
+    font-size: 18px;
+}
+
+table td {
+    background: #1a1a1a;
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    border-bottom: 1px solid #333;
+}
+
+/* ===== HOBBIES ===== */
+.hobbie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.hobbie {
+    background: #1a1a1a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #ff0000;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hobbie:hover {
+    transform: translateX(8px);
+}
+
+/* ===== SKILLS ===== */
+.projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.project {
+    background: #1a1a1a;
+    padding: 12px 20px;
+    border-left: 4px solid #ff0000;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 6px;
+    border: 1px solid #ff0000;
+    background: #111;
+    color: white;
+}
+
+form button {
+    padding: 10px 25px;
+    background: #ff0000;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.1);
+}
+
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.social-icons img {
+    transition: 0.3s;
+    filter: invert(100%);
+}
+
+.social-icons img:hover {
+    transform: scale(1.18);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #0d0d0d;
+    color: #ff0000;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 600;
+    border-top: 2px solid #ff0000;
+}
