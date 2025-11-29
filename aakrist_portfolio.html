@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aakrist Acharya</title>
-    <link rel="stylesheet" href="aakrist_portfolio.css" />
+    <link rel="stylesheet" href="css/aakrist_portfolio.css" />
 </head>
 
 <body>
@@ -14,31 +14,34 @@
         <h1>Aakrist Acharya</h1>
 
         <nav>
-            <ul>
+            <ul id="nav-list" class="nav-links">
                 <li><a href="#bio">SHORT BIO</a></li>
                 <li><a href="#education">EDUCATION HISTORY</a></li>
                 <li><a href="#interest">INTERESTS & HOBBIES</a></li>
-                <li><a href="#projects">SKILLS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#contact-me">CONTACT FORM</a></li>
                 <li><a href="#socials">SOCIALS</a></li>
             </ul>
+
+            <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
         </nav>
 
-
-        <video loop muted autoplay id="background_video"><source src="hacke.mp4" type="video/mp4"></video>
-
+        <video loop muted autoplay id="background_video">
+            <source src="video/hacke.mp4" type="video/mp4">
+        </video>
 
     </header>
 
     <section id="bio" class="section">
         <h2>SHORT BIO</h2>
-        <img src="photo.jpg" alt="Aakrist Acharya" class="profile-img">
+        <img src="photo/photo.jpg" alt="Aakrist Acharya" class="profile-img">
         <p>
-            My name is Aakrist Acharya currently pursuing my Bachelors in BCS(Hons) Computer Science at Herald College
-            Kathmandu. In my +2, I was in the biology field, but I realized I had no interest in it. So, I decided
-            to switch to computer science and am now building a bright future in this field.
+            My name is Aakrist Acharya currently pursuing my BCS(Hons) Computer Science at Herald College
+            Kathmandu.
         </p>
     </section>
+
+    <!-- my education -->
 
     <section id="education" class="section">
         <h2>EDUCATION HISTORY</h2>
@@ -61,6 +64,8 @@
         </table>
     </section>
 
+
+    <!-- intrest and hobbies -->
     <section id="interest" class="section">
         <h2>Interests & Hobbies</h2>
         <div class="hobbie-list">
@@ -70,41 +75,53 @@
         </div>
     </section>
 
-    <section id="projects" class="section">
+
+
+    <!--  my sklills  -->
+    <section id="skills" class="section">
         <h2>My Skills</h2>
-        <div class="projects-list">
-            <div class="project">FrontEnd</div>
-            <div class="project">Unity Game Engine</div>
-            <div class="project">Figma</div>
-            <div class="project">Unreal Engine</div>
+        <div class="skills-list">
+            <div class="skills">FrontEnd</div>
+            <div class="skills">Unity Game Engine</div>
+            <div class="skills">Figma</div>
+            <div class="skills">Unreal Engine</div>
         </div>
     </section>
 
+    <!-- contact form -->
     <section id="contact-me" class="section">
         <h2>Contact Me</h2>
-        <form>
+
+        <form id="contact-form-id">
             <label>FEEL FREE TO ASK ANY QUESTIONS</label>
-            <input type="text" placeholder="QUESTIONS HERE">
+
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="text" id="question" placeholder="QUESTIONS HERE">
+
             <button type="submit">SUBMIT</button>
+
+            <p id="form-message"></p>
+
             <p>or</p>
             <a href="mailto:aakristacharya47@gmail.com">aakristacharya47@gmail.com</a>
         </form>
     </section>
 
+
+
+    <!-- my socials -->
     <section id="socials" class="section">
         <h2>Socials</h2>
         <div class="social-icons">
             <a href="https://www.facebook.com/aakrist.acharya.581" target="_blank">
-                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg" alt="Facebook"
-                    height="50">
+                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Black-Logo.wine.svg" height="50">
             </a>
             <a href="https://www.instagram.com/aakrist_acharya/" target="_blank">
-                <img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" alt="Instagram"
-                    height="45">
+                <img src="https://www.iconpacks.net/icons/2/free-instagram-logo-icon-3497-thumb.png" height="45">
             </a>
             <a href="https://discord.com" target="_blank">
-                <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6ac3c481f273141736_icon_clyde_black_RGB.png"
-                    alt="Discord" height="40">
+                <img src="https://cdn.prod.website-files.com/.../icon_clyde_black.png" height="40">
             </a>
         </div>
     </section>
@@ -112,6 +129,8 @@
     <footer>
         <p>© 2024 Aakrist Acharya. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
